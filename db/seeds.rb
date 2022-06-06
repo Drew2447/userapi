@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+Porfile.create(name:'fred', position:'js')
+Porfile.create(name:'ann', position:'rails')
+Porfile.create(name:'ted', position:'rudy')

@@ -3,4 +3,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  namespace :api do
+    get '/porfile', to: 'porfile#index'
+    post '/porfile', to: 'porfile#create'
+
+    get '/porfile/:id', to: "porfile#show"
+    put '/porfile/:id', to: "porfile#update"
+
+    delete '/porfile/:id', to:'porfile#destroy'
+  end  
 end
